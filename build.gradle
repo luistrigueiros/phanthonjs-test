@@ -1,0 +1,15 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+group = 'phanthonjs-test'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile 'com.github.detro:phantomjsdriver:1.2.0'            
+}
+
+mainClassName = "TestPhantomJSDriver"
+applicationDefaultJvmArgs = ["-DPHANTOMJS_EXECUTABLE_PATH=C:\\dev\\phantomjs\\1.9.1\\phantomjs.exe"]
