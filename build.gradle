@@ -12,4 +12,9 @@ dependencies {
 }
 
 mainClassName = "TestPhantomJSDriver"
-applicationDefaultJvmArgs = ["-DPHANTOMJS_EXECUTABLE_PATH=C:\\dev\\phantomjs\\1.9.1\\phantomjs.exe"]
+applicationDefaultJvmArgs = ["-DPHANTOMJS_EXECUTABLE_PATH=$phanthonjsExePath"]
+
+task echoprops << {
+  println "The version is $version" 
+  println "The path to phanthonjs is $phanthonjsExePath"
+}
